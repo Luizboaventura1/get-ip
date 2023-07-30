@@ -4,7 +4,7 @@ let result = document.getElementById('result');
 
 getIpUser.addEventListener('click', async () => {
   let userIP = input.value
-  let response = await fetch(`http://ipinfo.io/${userIP}?token=1116d78bd51532`)
+  let response = await fetch(`https://ipinfo.io/${userIP}?token=1116d78bd51532`)
   let data = await response.json()
   result.innerHTML = template(data)
 
