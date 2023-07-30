@@ -20,13 +20,13 @@ function template(data) {
   return `
     <div class="p-3 h-auto">
       <code>
-        ip: ${data.ip}, <br>
-        city: ${data.city}, <br>
-        region: ${data.region}, <br>
+        ip: ${data.ip},           <br>
+        city: ${data.city},       <br>
+        region: ${data.region},   <br>
         country: ${data.country}, <br>
-        loc: ${data.loc}, <br>
-        org: ${data.org}, <br>
-        postal: ${data.postal}, <br>
+        loc: ${data.loc},         <br>
+        org: ${data.org},         <br>
+        postal: ${data.postal},   <br>
         timezone: ${data.timezone}
       </code>
     </div>
@@ -35,5 +35,6 @@ function template(data) {
 
 function animation () {
   result.style.height = '0'
-  result.style.height = '220px'
+  setTimeout(() => result.style.height = '220px', 600)
+
 }
