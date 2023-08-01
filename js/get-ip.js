@@ -36,5 +36,4 @@ function template(data) {
 function animation () {
   result.style.height = '0'
   setTimeout(() => result.style.height = '220px', 600)
-
 }
