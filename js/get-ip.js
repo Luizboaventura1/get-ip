@@ -50,9 +50,9 @@ fetch('https://api.ipify.org?format=json')
   showIpUser()
 })
 
-const showIpUser = async () => {
+const showIpUser = () => {
   let content = document.querySelector('.ipuser-container span')
-  content.innerHTML = await contentIpUserContainer(ipUser)
+  content.innerHTML = contentIpUserContainer(ipUser)
   ipUserContainer.style.height = '40px'
 } 
 
