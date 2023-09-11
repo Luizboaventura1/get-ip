@@ -58,3 +58,44 @@ header {
     }
   }
 }
+
+.ipuser-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 20px 20px;
+  background-color: rgb(46, 44, 49);
+  height: 0px;
+  transition: .7s;
+  &:hover {
+    svg {
+      fill: white !important;
+      width: 18px !important;
+      height: 18px !important;
+    }
+  }
+
+  #text-ip {
+    color: rgb(154, 46, 255);
+  }
+
+  .copy-ip {
+    transition: .3s;
+    border: none;
+    outline: none;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgb(79, 75, 84) !important;
+    }
+
+    svg {
+      fill: transparent;
+      width: 0;
+      height: 0;
+      transition: .3s;
+    }
+  }
+}
