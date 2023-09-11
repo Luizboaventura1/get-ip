@@ -65,16 +65,5 @@ const contentIpUserContainer = (ipUser) => {
 // Button Copy
 
 document.querySelector('.copy-ip').addEventListener('click', () => {
-  const textToCopy = ipUser
-
-  const input = document.createElement('input')
-  input.setAttribute('value', textToCopy)
-  document.body.appendChild(input)
-
-  input.select();
-  input.setSelectionRange(0, 99999)
-
-  document.execCommand('copy')
-
-  document.body.removeChild(input)
+  navigator.clipboard.writeText(ipUser)
 })
